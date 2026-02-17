@@ -61,6 +61,7 @@ create another "setup.md" file and link to it here*
 * [Notebook/Markdown/Slide DeckTitle](link)
 * [Blog Post](link)
 
+https://dog-density-zurich-ivan.streamlit.app
 
 ## Contributing Members
 
