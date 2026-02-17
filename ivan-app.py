@@ -44,7 +44,7 @@ fig = px.choropleth_map(df_dogs_by_kreis, geojson=geojson_dogs, color="NUM DOG O
                         locations="STADTKREIS", featureidkey="properties.bezeichnung",
                         center={"lat": 47.3769, "lon": 8.5417},
                         map_style="carto-positron", zoom=10, opacity=0.5,
-                        hover_data={"STADTKREIS": True, "NUM DOGS": True},
+                        hover_data={"STADTKREIS": True, "NUM DOG OWNERS": True},
                         color_continuous_scale="YlOrRd")
 fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
