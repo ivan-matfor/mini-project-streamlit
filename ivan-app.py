@@ -26,6 +26,9 @@ if st.checkbox("Let's see the Dataframe (click to expand)"):
     st.subheader("This dataset describes all the dogs registered in the city of Zurich:")
     st.dataframe(data=df_dogs)
 
+url = "https://data.stadt-zuerich.ch"
+st.write("Data Source:", url)
+
 # loading json spatial data
 with open("data/raw/stzh.adm_stadtkreise_a.json", "r", encoding="utf-8") as f:
     geojson_dogs = json.load(f)
