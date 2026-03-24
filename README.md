@@ -4,7 +4,7 @@ An interactive Streamlit dashboard to explore dog ownership patterns across Zuri
 
 **Live app:** https://dog-density-zurich-ivan.streamlit.app
 
-#### -- Project Status: Active
+#### -- Project Status: Completed
 
 ## Overview
 
