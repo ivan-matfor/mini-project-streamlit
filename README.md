@@ -1,73 +1,56 @@
-# Project Name
+# Zurich Dog Owners Dashboard
 
-example image:
+An interactive Streamlit dashboard to explore dog ownership patterns across Zurich's districts using open city data.
 
+**Live app:** https://dog-density-zurich-ivan.streamlit.app
 
-![alternative text](reports/img/pic01.jpg)
+#### -- Project Status: Active
 
+## Overview
 
-#### -- Project Status: [Active, On-Hold, Completed]
+This project visualizes data from the City of Zurich's open data portal on registered dog owners. The app allows users to explore:
 
-## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project. Limit to a short paragraph, 3-6 Sentences)
+- **Dog density by district** — a choropleth map showing how many dogs are registered per Zurich Stadtkreis (district 1–12)
+- **Popular breeds by gender** — a bar chart of the top 15 most common dog breeds filtered by the owner's gender
 
-### Partner
-* [Name of Partner organization/Government department etc..]
-* Website for partner
-* Partner contact: [Name of Contact]
-* If you do not have a partner leave this section out
+## Technologies
 
-### Methods Used
-* Inferential Statistics
-* Machine Learning
-* Data Visualization
-* Predictive Modeling
-* etc.
+- Python
+- Streamlit
+- Pandas
+- Plotly
 
-### Technologies
-* R
-* Python
-* D3
-* PostGres, MySql
-* Pandas, jupyter
-* HTML
-* JavaScript
-* etc.
+## Data Source
 
-## Project Description
-(Provide more detailed overview of the project.
-Talk a bit about your data sources and what questions and hypothesis you are exploring.
-What specific data analysis/visualization and modelling work are you using to solve the
-problem? What blockers and challenges are you facing?
-Feel free to number or bullet point things here)
+- **Dataset:** [Hundehalter der Stadt Zürich](https://data.stadt-zuerich.ch) — 7,800+ records of registered dog owners with demographic info and dog characteristics
+- **GeoJSON:** Administrative boundaries of Zurich's Stadtkreise for choropleth mapping
 
 ## Getting Started
 
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/your-username/mini-project-streamlit.git
+   cd mini-project-streamlit
+   ```
 
-    *If using offline data mention that and how they may obtain the data from the froup)*
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
+3. Run the app:
+   ```bash
+   streamlit run ivan-app.py
+   ```
 
-*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages)
-create another "setup.md" file and link to it here*
+## Project Structure
 
-5. Follow setup [instructions](Link to file)
-
-## Featured Notebooks/Analysis/Deliverables
-* [Notebook/Markdown/Slide Deck Title](link)
-* [Notebook/Markdown/Slide DeckTitle](link)
-* [Blog Post](link)
-
-https://dog-density-zurich-ivan.streamlit.app
-
-## Contributing Members
-
-**Team Leads (Contacts) : [Full Name](https://github.com/[github handle])**
-
-#### Other Members:
-
- - [Full Name](https://github.com/[github handle])
- - [Full Name](https://github.com/[github handle])
+```
+mini-project-streamlit/
+├── ivan-app.py               # Main Streamlit app
+├── requirements.txt
+└── data/
+    └── raw/
+        ├── 20200306_hundehalter.csv      # Dog owner records
+        └── stzh.adm_stadtkreise_a.json  # Zurich district boundaries (GeoJSON)
+```
